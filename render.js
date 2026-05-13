@@ -126,13 +126,24 @@ const html = `<!doctype html>
   <link rel="stylesheet" href="vendor/katex/katex.min.css">
   <style>
     :root {
-      color-scheme: light;
+      color-scheme: light dark;
       --bg: #f7f5ef;
       --paper: #fffdf8;
       --ink: #25231f;
       --muted: #666157;
       --rule: #d8d0c3;
       --accent: #2b6256;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161513;
+        --paper: #211f1b;
+        --ink: #eee8dd;
+        --muted: #b9afa1;
+        --rule: #4a443b;
+        --accent: #8ac8b9;
+      }
     }
 
     * {
@@ -153,7 +164,6 @@ const html = `<!doctype html>
       margin: 32px auto;
       padding: clamp(24px, 5vw, 64px);
       background: var(--paper);
-      border: 1px solid var(--rule);
       box-shadow: 0 18px 50px rgb(31 27 18 / 10%);
     }
 
@@ -196,8 +206,7 @@ const html = `<!doctype html>
       height: auto;
       display: block;
       margin: 1.5rem auto;
-      border: 1px solid var(--rule);
-      background: #fff;
+      background: var(--paper);
     }
 
     .katex-display {
