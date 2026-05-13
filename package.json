@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "node render.js"
+  },
+  "dependencies": {
+    "katex": "^0.16.45",
+    "markdown-it": "^14.1.1"
+  }
+}
