@@ -6,6 +6,12 @@
 
 ---
 
+# Summary
+
+This report offers a rather general and mathematically convenient formulation of analog-modulated signals which makes use of the analytic signal concept. Known types of modulation are readily identified as special cases. As a result of examining the various cases which the model embraces, a new type of modulation has been discovered--single sideband frequency modulation (SSB PM)--which can be derived from a conventional phase-modulated signal by an additional amplitude modulation, using the exponential function of the modulating signal's Hilbert transform. The resulting modulated signal will have a one-sided spectrum about the carrier frequency, will be compatible with existing PM receivers, and will cause a decrease in signal bandwidth.
+
+---
+
 # I. INTRODUCTION
 
 Recent studies of compatible single sideband (SSB) modulation systems have stimulated interest in the theoretical aspects of simultaneous amplitude and phase modulation. These studies are notable for at least two reasons which are not connected with the specific application.
@@ -357,4 +363,3 @@ Conventional SSB is adequate for speech or music because of the tolerance of the
 However, data waveforms must be reproduced without such errors, so exact carrier re-insertion is required.
 
 The fact that the modulating signal is contained in the envelope of Eq. (9) indicates that square-law envelope detection should result in distortionless reception, thus obviating carrier re-insertion without sacrificing spectral economy.
-
