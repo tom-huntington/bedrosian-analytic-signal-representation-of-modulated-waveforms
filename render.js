@@ -95,6 +95,7 @@ function mathPlugin(md) {
   md.renderer.rules.math_block = (tokens, idx) => `${renderMath(tokens[idx].content, true)}\n`;
 }
 
+copyFileIfExists(sourcePath, path.join(outDir, "paper.md"));
 const source = fs.readFileSync(sourcePath, "utf8");
 const md = new MarkdownIt({
   html: false,
