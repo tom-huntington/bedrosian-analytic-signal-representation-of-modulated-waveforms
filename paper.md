@@ -47,7 +47,7 @@ The theoretical justification of this representation is gratifying because it br
 While the actual processes employed in generating an analog-modulated signal may differ considerably for various types of modulation, the resulting signal appears representable as the product of two time functions:
 
 $$
-S(t) = c(t)\,m(f(t))
+S(t) = c(t)\,m(f(t)) \tag{1}
 $$
 
 where $c$ is a function representing the carrier and $m$ is the modulation functional representing an operation on the modulating signal $f$.
@@ -61,7 +61,7 @@ The purpose of the carrier function in Eq. (1) is to transfer the intelligence s
 The effect on the resulting spectrum is seen from the Fourier transform of the product in Eq. (1):
 
 $$
-S(\omega)=\frac{1}{2\pi}\int_{-\infty}^{\infty} C(\mu)M(\omega-\mu)\,d\mu
+S(\omega)=\frac{1}{2\pi}\int_{-\infty}^{\infty} C(\mu)M(\omega-\mu)\,d\mu \tag{2}
 $$
 
 If the carrier is a narrow-band waveform as might be employed for noise modulation, then the convolution expressed in Eq. (2) results in a spreading of the signal band as well as its translation to the vicinity of the carrier frequency.
@@ -69,7 +69,7 @@ If the carrier is a narrow-band waveform as might be employed for noise modulati
 If the carrier is a pure sinusoid, then a simple frequency translation is effected and Eq. (2) becomes
 
 $$
-S(\omega)=M(\omega-\omega_0)+M(\omega+\omega_0)
+S(\omega)=M(\omega-\omega_0)+M(\omega+\omega_0) \tag{3}
 $$
 
 If the carrier is written as an analytic signal whose spectrum therefore exists only for positive frequencies, then the frequency transfer is only toward the positive frequencies.
@@ -135,7 +135,7 @@ s(t)=f(t)\cos\omega_0 t+i f(t)\sin\omega_0 t
 $$
 
 $$
-|s(t)|=f(t), \qquad \omega_0 \gg \omega_{\max}
+|s(t)|=f(t), \qquad \omega_0 \gg \omega_{\max} \tag{4}
 $$
 
 The representation of a conventional amplitude-modulated signal is immediately apparent.
@@ -199,7 +199,7 @@ $$
 \omega_{\text {inst }} \equiv \frac{d e p}{d t}=\omega_{0}+\dot{f}(t)
 $$
 
-has the same excursions for both Ens. (6) and (7), the multiplicative factor $e^{-\hat{f}(t)}$ causes the lower sideband to disappear in Eq. (7). To demonstrate that this is indeed the case and, also, to gain insight as to the effect on the upper sideband, consider frequency modulation by the single sinusoid
+has the same excursions for both Eqs. (6) and (7), the multiplicative factor $e^{-\hat{f}(t)}$ causes the lower sideband to disappear in Eq. (7). To demonstrate that this is indeed the case and, also, to gain insight as to the effect on the upper sideband, consider frequency modulation by the single sinusoid
 
 $$
 \dot{f}(t)=\Omega \cos \omega t
