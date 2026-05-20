@@ -131,11 +131,11 @@ m(t)=f(t)
 $$
 
 $$
-s(t)=f(t)\cos\omega_0 t+i f(t)\sin\omega_0 t
+s(t)=f(t)\cos\omega_0 t+i f(t)\sin\omega_0 t \tag{4}
 $$
 
 $$
-|s(t)|=f(t), \qquad \omega_0 \gg \omega_{\max} \tag{4}
+|s(t)|=f(t), \qquad \omega_0 \gg \omega_{\max}
 $$
 
 The representation of a conventional amplitude-modulated signal is immediately apparent.
